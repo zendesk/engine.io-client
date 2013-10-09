@@ -1,5 +1,5 @@
 {
-    "name": "engine.io-client"
+    "name": "engine.io-client_old"
   , "description": "Client for the realtime Engine"
   , "main": "./lib/engine.io-client"
   , "version": "0.2.2"
