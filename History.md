@@ -1,4 +1,171 @@
 
+1.3.1 / 2014-06-19
+==================
+
+ * transport: catch utf8 decode errors
+
+1.3.0 / 2014-06-13
+==================
+
+ * smaller inherits utility
+ * fix a test for ws
+ * upgrade emitter dep to not rely on tarball
+
+1.2.2 / 2014-05-30
+==================
+
+ * package: bump `engine.io-parser` for binary utf8 fix
+
+1.2.1 / 2014-05-22
+==================
+
+ * build
+
+1.2.0 / 2014-05-18
+==================
+
+ * removed flashsocket, moving to userland
+ * new build
+
+1.1.1 / 2014-05-14
+==================
+
+ * jsonp-polling: fixed newline double escaping
+ * package: bump parser
+ * remove legacy Socket#onopen call
+ * added tests for multibyte strings
+
+1.1.0 / 2014-04-27
+==================
+
+ * bump zuul version
+ * renamed removeAllListeners to cleanup
+ * use inherits package instead of inherit
+ * removed all references to util.js
+ * fix if statement in FlashWS.ready method
+ * polling-jsonp: prevent spurious errors from being emitted when the window is unloaded
+ * polling-xhr: fix a comment and remove unneeded `document` reference
+ * enforce cache busting for all user agents
+ * JSONP and test fixes for fails in IE
+ * package: bump `engine.io-parser`
+ * polling-xhr: abort the request when the window is unloaded
+
+1.0.5 / 2014-03-18
+==================
+
+ * package: bump `engine.io-parser` for android binary fix
+
+1.0.4 / 2014-03-14
+==================
+
+ * no base64 encoding for no reason when using websockets
+
+1.0.3 / 2014-03-12
+==================
+
+ * fix browserify
+
+1.0.2 / 2014-03-12
+==================
+
+ * bump `engine.io-parser`
+ * made `parseJSON` and `parseURI` from `util` their own modules [gkoren]
+ * clean up tests
+ * clean up browserify
+
+1.0.1 / 2014-03-06
+==================
+
+ * package: bump `engine.io-parser`
+
+1.0.0 / 2014-03-06
+==================
+
+ * run browserify without shims
+ * emit socket upgrade event after upgrade done
+ * better feature detection for XHR2
+ * added `rememberUpgrade` option
+ * binary support
+
+0.9.0 / 2014-02-09
+==================
+
+ * Fix simple `host:port` URLs and IPV6 [bmalehorn]
+ * Fix XHR cleanup method [poohlty]
+ * Match semantics of `close` event with `WebSocket`. If an error occurs
+   and `open` hadn't fired before, we still emit `close` as per
+   WebSocket spec [mokesmokes].
+ * Removed SPEC (now in `engine.io-protocol` repository)
+ * Remove `Socket#open` docs (private API) [mokesmokes]
+
+0.8.2 / 2014-01-18
+==================
+
+ * polling-xhr: avoid catching user-thrown errors
+ * util: remove unused `hasCORS`
+ * polling: remove deferring for faster startup (fixes #174)
+ * engine now works perfectly on workers
+
+0.8.1 / 2014-01-17
+==================
+
+ * package: bump debug to fix `localStorage` issue (fixes #213)
+ * remove duplicate xmlhttprequest code
+ * add iphone automated testing
+ * bump zuul to 1.3.0 to improve tests performance
+ * use invalid ip address for incorrect connection test
+ * Fix GH-224, remove sockets array
+
+0.8.0 / 2014-01-05
+==================
+
+ * socket: emit upgrade errors as `upgradeError` instead of `error`
+
+0.7.14 / 2014-01-01
+===================
+
+ * test: increase timeouts for network tests
+ * test: whitelist globals
+ * test: improve socket closing test
+ * polling: improve url timestamp for ie11 and allow force disabling
+ * polling-xhr: handle errors for xhr creation (fixes `access denied` issues)
+ * polling-xhr: style
+ * socket: more instrumentation for transport creation
+ * socket: allow explicit `false` for `timestampRequests`
+ * socket: accept `null` as first argument
+ * Makefile: cleanup
+ * .travis: deprecate 0.6
+
+0.7.13 / 2013-12-20
+===================
+
+ * use `jsonp` in favor of `XDomainRequest` to preserve `Cookie`
+   headers in all situations [3rd-eden] (fixes #217)
+ * run zuul tests after node tests [defunctzombie]
+ * add zuul support for easier browser testing [defunctzombie]
+
+0.7.12 / 2013-11-11
+===================
+
+ * engine.io: updated build to fix WebSocket constructor issue
+ * package: move browserify into devDeps
+
+0.7.11 / 2013-11-06
+===================
+
+ * AMD support
+ * Makefile: build now smaller thanks to browserify
+ * add browserify support
+
+0.7.10 / 2013-10-28
+===================
+
+ * fixed issue which prevented IE9 and under to pass Cookies to server during handshake
+ * package: update "ws" to v0.4.31
+ * fixed - there is no host property only hostname
+ * fixed - flash socket creation
+ * fixed - emit errors thrown by xhr.send()
+
 0.7.9 / 2013-08-30
 ==================
 
