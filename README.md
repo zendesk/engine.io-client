@@ -128,7 +128,7 @@ Exposed as `eio` in the browser standalone build.
     - `String` | `ArrayBuffer`: utf-8 encoded data or ArrayBuffer containing
       binary data
 - `close`
-  - Fired upon disconnection. In compliance with the WebSocket API spec, this event may be 
+  - Fired upon disconnection. In compliance with the WebSocket API spec, this event may be
     fired even if the `open` event does not occur (i.e. due to connection error or `close()`).
 - `error`
   - Fired when an error occurs.
@@ -174,9 +174,10 @@ Exposed as `eio` in the browser standalone build.
       - `rememberUpgrade` (`Boolean`): defaults to false.
         If true and if the previous websocket connection to the server succeeded,
         the connection attempt will bypass the normal upgrade process and will initially
-        try websocket. A connection attempt following a transport error will use the 
+        try websocket. A connection attempt following a transport error will use the
         normal upgrade process. It is recommended you turn this on only when using
         SSL/TLS connections, or if you know that your network does not block websockets.
+      - `requestTimeout` (`Number`): Timeout for xhr-polling requests in milliseconds (`0`)
 - `send`
     - Sends a message to the server
     - **Parameters**
