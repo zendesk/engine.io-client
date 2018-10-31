@@ -1,12 +1,6 @@
 language: node_js
 node_js:
-  - "6"
-notifications:
-  irc: "irc.freenode.org#socket.io"
-env:
-  global:
-  - secure: v76/Y3hGIGsANoFAW0US3X8cuDFY7g8stMFrwGUxiQnm4HN3j83w+FfoZay0mESKhNIpqk4nCJQwMCd1gJnLL7ybjGOt5LeEuQVlLDXkRVrXSViy2XwAW+mLj7H/++/LTHWo/Ma6pOa1YC2o4SbSsiK1NdhdAK5ZGluonPBIG18=
-  - secure: P2zFTMeI9duoPBXhAZZLddqeJS+dUI27Q02tTdr+AjvUkr8f7Zga57SZxP6Jbn8bxUPI3ZQzAm1KMsyUo4IAegXLJ4j9VCF6ab65NkE1k8UH99kXXS30Ha27NS1aQafCbaOTxxQfqQHmnjt2HJtvk04nqCEDhoZCdDUZNVSGCOc=
+- '6'
 matrix:
   include:
   - node_js: '6'
@@ -43,3 +37,9 @@ matrix:
     env: BROWSER_NAME=android BROWSER_VERSION=4.3
   - node_js: '6'
     env: BROWSER_NAME=android BROWSER_VERSION=4.4
+env:
+  global:
+  # SAUCE_USERNAME
+  - secure: "jJoS2VoS4kxnsHpOR7eLalYIdwV119s7+p0hi7G8SoDpee1UDQG/1hcHZaEAcLrAtwNYI5Q1hROggstJuzKavtWyp4qGToMcMOU964sATwojAsutxFtfLUWXOYj597D/zZg4pj+tbMhVdQo1oe/48YpJHrALzpU3a81b06AeO8dl1QCFEp1RYXgFAMftckomCCwPBhs9udw2on7WFiIMIc9LUEiVU9D8GPGUQx307i8ZFhhonxPcAxe5o4KX3QXUjb0zrKU5DdYnsrBko5IBylDyr2RVIBefOHNceRk9bcxwhDOgwhHyrur0NhM7xJNZE3lj/63XgtJpXMGKreAgrlN7W1YdQ8zuKAblryayJ2G8MFxjMmZvEjBrq6toUhaaY32jyEX3bBerpdUT/k3vgLYUodCh1HkCvvq7zT/jEutMNtzEM/C3QZMz/9GJeD6CQpY33yR1YUb3eCdeUnifNpKx7zrLSmuxpLBpR/nE569NEBySDbaMqB/UtXe/LkD1D/C2Ycyld3rhXryPuvKttcst95XxELjVE8Ns0iPxJakcsrzyDyX3F5DCLFQGdD9Nolrk3QvSdlnhK/xMss3Wn2d+rwmK3SkOcxaqtgAuiz/VmduHRKlpMT+Rs530sKGQmseKcxzj9Y7+lcWBAXfGwP/3Zz0yXKfRvNrDzboV5uY="
+  # SAUCE_ACCESS_KEY
+  - secure: "ALa+LQYiLvIMjhDWiKRkSs/XUyZYmmKXxHFJGOEbioSZmjM/KWd268WFKBFRB8IgMi9KTghIqX4J57zp+/Azp7/rfWL3EZqvSM3vb+VZyxzwfnCfkDddjLvYQ5dVQpXYwgjxXjRWPhzojMjjZ0L8Hw2Id630wT3wAVu8kViEowsdLBjTQLmB+E0m3F0S0AtjdiP4Gja0w8j7noVId9l4ZkQ1TAjvcISgh5XkUEK7HVhvSoODR3pXxlgNWfyEHRAghq0sYs3F/EsOtF2Jm4c8Q342FH8DhMDoilF3tWQs8dFlfpVtTods4aHC9PVTF3BSl3HfnxOFkUONra+tI83JmL/+G2OSJXltZmb7RDNvJeuIRPHzWJFRYGZGev06lJAIBM7ryaIVVyT6rPA/iBpW5FfhEg/PoHJl+Z3waFBXuulrN4umhPU0oFrMXtR+B4wGIjDH2/EN5vSewW0T0CwO9bJ4NcYzPYQTNSKTKtDe5ffXkr1POzbStcVSadyLDtRQLxx7YtSfvDBD/d9YbXC2ttZJSlEGmMq/zldJeEGq2y7ZPmGyqq+3RvT+mbcZnYK6cuxYTWRRuvcIFZwkA3R81qu64eFWPwjzF91gADd5ja+vrRaNvL1CgN8SoJqUK/S3DytL0TDWE4BPIlJtZkh15kIBmdSVeP4oUYEqGPxMqTU="
