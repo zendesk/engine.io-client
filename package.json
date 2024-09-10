@@ -23,14 +23,14 @@
   ],
   "dependencies": {
     "has-cors": "1.0.3",
-    "ws": "0.4.31",
+    "ws": "1.1.5",
     "xmlhttprequest": "https://github.com/LearnBoost/node-XMLHttpRequest/archive/0f36d0b5ebc03d85f860d42a64ae9791e1daa433.tar.gz",
     "component-emitter": "1.1.2",
     "indexof": "0.0.1",
     "engine.io-parser": "1.1.0",
-    "debug": "0.7.4",
+    "debug": "2.6.9",
     "parseuri": "0.0.2",
-    "parsejson": "0.0.1",
+    "parsejson": "0.0.3",
     "parseqs": "0.0.2",
     "component-inherit": "0.0.3"
   },
@@ -41,7 +41,7 @@
     "istanbul": "0.2.3",
     "browserify": "4.2.0",
     "engine.io": "Automattic/engine.io#08afdc",
-    "express": "3.4.8",
+    "express": "4.20.0",
     "blob": "0.0.2"
   },
   "scripts": {
